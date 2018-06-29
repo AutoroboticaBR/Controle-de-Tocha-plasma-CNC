@@ -1,0 +1,14 @@
+[PROJECT]
+Target=THC 3.hex
+Processor_Text=PIC16F877
+CCSVersion=5.061
+Compiler=PCM
+[Target Data]
+FileList=THC 3.c
+[THC 3.c]
+Type=4
+[mru-list]
+1=THC 3.c
+[Units]
+Count=1
+1=THC 3 (main)

@@ -1,0 +1,69 @@
+
+ROM used: 1270 (16%)
+          1270 (16%) including unused fragments
+
+          2 Average locations per line
+          7 Average locations per statement
+
+RAM used: 36 (10%) at main() level
+          46 (12%) worst case
+
+Stack used: 4 worst case (out of 8 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  194   125  66  THC 6.c
+  312     0   0  ..\..\..\..\Program Files\PICC\devices\16f877a.h
+  180    63  34  ..\..\..\..\Program Files\PICC\drivers\lcd.c
+----- -----
+  686   188 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     13   1   1             @delay_ms1
+0      8   1   0             @const64
+ Inline        3   463  4.3  lcd_read_byte
+0     11   1   1   134  2.2  lcd_send_nibble
+0     57   4   3   317  4.3  lcd_send_byte
+0     44   3   2   422  4.7  lcd_init
+ Inline        4   186  5.5  lcd_gotoxy
+0     55   4   1   272  4.1  lcd_putc
+0    744  59   4  5403 12.9  MAIN
+0     11   1   0             @const107
+0     18   1   0             @const108
+0     22   2   0             @const109
+0     17   1   0             @const110
+0     21   2   3             @DIV88
+0     53   4   2             @PRINTF_U_84
+0     22   2   0             @const117
+0     14   1   0             @const118
+0     20   2   0             @const119
+0     11   1   0             @const121
+0     11   1   0             @const122
+0     39   3   2             @MUL88
+0     22   2   0             @const126
+0     18   1   0             @const127
+0     35   3   0             @const128
+
+Program metrics:
+    Functions               7
+    Statements              188
+    Comments                127
+    Volume (V)              9039
+    Difficilty (D)          37.0
+    Effort to implement (E) 334740
+    Time to implement (T)   5 hours, 10 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   29
+    Maintainability (MI)    95
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF  1266  778  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

@@ -1,0 +1,70 @@
+
+ROM used: 1445 (18%)
+          1445 (18%) including unused fragments
+
+          2 Average locations per line
+          7 Average locations per statement
+
+RAM used: 38 (10%) at main() level
+          54 (15%) worst case
+
+Stack used: 4 worst case (out of 8 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  207   138  69  THC 7.c
+  312     0   0  ..\..\..\..\Program Files\PICC\devices\16f877a.h
+  180    63  31  ..\..\..\..\Program Files\PICC\drivers\lcd.c
+----- -----
+  699   201 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     15   1   1             @delay_ms1
+0      8   1   0             @const64
+ Inline        3   463  4.3  lcd_read_byte
+0     12   1   1   134  2.2  lcd_send_nibble
+0     58   4   3   317  4.3  lcd_send_byte
+0     44   3   2   422  4.7  lcd_init
+ Inline        4   186  5.5  lcd_gotoxy
+0     55   4   1   272  4.1  lcd_putc
+0    823  57   4  6137 13.4  MAIN
+0     19   1   0             @const108
+0     18   1   0             @const109
+0     22   2   0             @const110
+0     17   1   0             @const111
+0     21   1   3             @DIV88
+0     53   4   2             @PRINTF_U_84
+0     22   2   0             @const118
+0     14   1   0             @const119
+0     20   1   0             @const120
+0     11   1   0             @const122
+0     11   1   0             @const123
+0     22   2   0             @const124
+0     19   1   0             @const125
+0    101   7   9             @PRINTF_LU_84
+0     21   1   5             @MUL1616
+0     35   2   0             @const131
+
+Program metrics:
+    Functions               7
+    Statements              201
+    Comments                127
+    Volume (V)              9820
+    Difficilty (D)          37.6
+    Effort to implement (E) 369179
+    Time to implement (T)   5 hours, 42 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   29
+    Maintainability (MI)    93
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF  1441  603  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

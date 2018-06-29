@@ -1,0 +1,112 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004     @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+008     lcd
+015     CCP_1_LOW
+015-016 CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B-01C CCP_2
+01C     CCP_2_HIGH
+020     histerese
+021     definida
+022     lida
+023     Vmin
+024     temp
+025     menu
+026     @TRIS_C
+027-02A @MULFF.P1
+027-02A @SFTOI.P2
+027-028 @ITOF.P3
+027     lcd_init.i
+027     MAIN.@SCRATCH1
+028     lcd_init.@SCRATCH1
+028     MAIN.@SCRATCH2
+029     @PRINTF_U_84.P1
+02A     @PRINTF_U_84.P1
+02B-02E @MULFF.P1
+02B     @DIV88.P2
+02B     lcd_putc.c
+02C     lcd_gotoxy.x
+02C     @delay_ms1.P1
+02C     @DIV88.P2
+02D     lcd_gotoxy.y
+02D     @DIV88.@SCRATCH1
+02E     lcd_gotoxy.address
+02F     lcd_gotoxy.@SCRATCH1
+02F     @MULFF.@SCRATCH1
+030     lcd_send_byte.address
+030     @MULFF.@SCRATCH2
+031     lcd_send_byte.n
+031     @MULFF.@SCRATCH3
+032     lcd_read_byte.low
+032     lcd_send_byte.@SCRATCH1
+032     @MULFF.@SCRATCH4
+033     lcd_send_nibble.n
+033     lcd_read_byte.high
+033     @MULFF.@SCRATCH5
+034     lcd_read_byte.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+0089  @delay_ms1
+0004  LCD_INIT_STRING
+00A2  lcd_read_byte
+0096  lcd_send_nibble
+00A1  lcd_send_byte
+00DA  lcd_init
+011D  lcd_gotoxy
+0106  lcd_putc
+023D  MAIN
+000C  @const99
+013C  @ITOF
+015B  @MULFF
+01D2  @SFTOI
+001A  @const107
+0030  @const108
+01F3  @DIV88
+0208  @PRINTF_U_84
+0041  @const115
+0057  @const116
+0065  @const117
+023D  @cinit
+
+Project Directory:
+    C:\Users\Raulstar\Google Drive\THC\
+
+Project Files:
+    THC 2.c
+    ..\..\..\..\Program Files\PICC\devices\16f877a.h
+    ..\..\..\..\Program Files\PICC\drivers\lcd.c
+
+Units:
+    C:\Users\Raulstar\Google Drive\THC\THC 2.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    ICD Provisions: Yes
+
+Output Files:
+    Errors:      THC 2.err
+    Ext Symbols: THC 2.esym
+    INHX8:       THC 2.hex
+    Symbols:     THC 2.sym
+    List:        THC 2.lst
+    Debug/COFF:  THC 2.cof
+    Project:     THC 2.PJT
+    Call Tree:   THC 2.tre
+    Statistics:  THC 2.sta

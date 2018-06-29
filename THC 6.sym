@@ -1,0 +1,118 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004     @WRITE_PROGRAM_MEMORY8.P2
+008     lcd
+008     PSP_DATA
+015     CCP_1_LOW
+015-016 CCP_1
+016     CCP_1_HIGH
+01B-01C CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-021 leitura
+022-023 fitrado
+024-02B valores
+02C     i
+02D-02E soma
+02F     histerese
+030     definida
+031     lida
+032     Vmin
+033     temp
+034     menu
+035     retardo
+036     t_retardo
+037-038 f_retardo
+039     @TRIS_C
+03A     lcd_init.i
+03A     @MUL88.P1
+03A     MAIN.@SCRATCH1
+03B     @MUL88.P1
+03B     @delay_ms1.P2
+03B     lcd_init.@SCRATCH1
+03B     MAIN.@SCRATCH2
+03C     @PRINTF_U_84.P1
+03C     MAIN.@SCRATCH3
+03D     @PRINTF_U_84.P1
+03D     MAIN.@SCRATCH4
+03E     lcd_putc.c
+03E     @DIV88.P1
+03F     @DIV88.P1
+03F     lcd_gotoxy.x
+040     lcd_gotoxy.y
+040     @DIV88.@SCRATCH1
+041     lcd_gotoxy.address
+042     lcd_gotoxy.@SCRATCH1
+043     lcd_send_byte.address
+044     lcd_send_byte.n
+045     lcd_read_byte.low
+045     lcd_send_byte.@SCRATCH1
+046     lcd_read_byte.high
+046     lcd_send_nibble.n
+047     lcd_read_byte.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+00E9  @delay_ms1
+0004  LCD_INIT_STRING
+0102  lcd_read_byte
+00F6  lcd_send_nibble
+0101  lcd_send_byte
+013A  lcd_init
+017F  lcd_gotoxy
+0166  lcd_putc
+020E  MAIN
+000C  @const107
+0017  @const108
+0029  @const109
+003F  @const110
+019D  @DIV88
+01B2  @PRINTF_U_84
+0050  @const117
+0066  @const118
+0074  @const119
+0088  @const121
+0093  @const122
+01E7  @MUL88
+009E  @const126
+00B4  @const127
+00C6  @const128
+020E  @cinit
+
+Project Directory:
+    C:\Users\Raulstar\Google Drive\THC\
+
+Project Files:
+    THC 6.c
+    ..\..\..\..\Program Files\PICC\devices\16f877a.h
+    ..\..\..\..\Program Files\PICC\drivers\lcd.c
+
+Units:
+    THC 6.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      THC 6.err
+    Ext Symbols: THC 6.esym
+    INHX8:       THC 6.hex
+    Symbols:     THC 6.sym
+    List:        THC 6.lst
+    Debug/COFF:  THC 6.cof
+    Project:     THC 6.PJT
+    Call Tree:   THC 6.tre
+    Statistics:  THC 6.sta

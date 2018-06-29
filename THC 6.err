@@ -1,0 +1,3 @@
+>>> Warning 202 "THC 6.c" Line 11(6,13): Variable never used:   fitrado
+      Memory usage:   ROM=16%      RAM=10% - 12%
+      0 Errors,  1 Warnings.

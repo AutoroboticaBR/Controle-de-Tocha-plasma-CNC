@@ -1,0 +1,4 @@
+>>> Warning 202 "THC 7.c" Line 11(10,17): Variable never used:   fitrado
+>>> Warning 202 "THC 7.c" Line 26(10,19): Variable never used:   c_retardo
+      Memory usage:   ROM=18%      RAM=10% - 15%
+      0 Errors,  2 Warnings.
